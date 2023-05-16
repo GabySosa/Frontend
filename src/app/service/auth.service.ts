@@ -10,6 +10,8 @@ import { JwtDto } from '../model/jwt-dto';
 })
 export class AuthService {
   authURL = 'http://localhost:8080/auth/';
+  /*authURL = 'https://backend-sosasilvia.onrender.com/auth/'*/
+
   constructor(private HttpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{

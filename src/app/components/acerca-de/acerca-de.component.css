@@ -3,7 +3,7 @@
 }
 
 div{
-    background-color: antiquewhite;
+    background-color: #7BFFD1;
     text-align: center;
 }
 
@@ -15,7 +15,7 @@ div{
 
 @media (min-width:576px){
     #fotoperfil{
-        postion: absolute;
+        position: absolute;
         width: 100%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
@@ -26,7 +26,7 @@ div{
 
 @media (max-width:576px){
     #fotoperfil{
-        postion: absolute;
+        position: absolute;
         width: 100%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;

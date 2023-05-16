@@ -10,7 +10,8 @@ import { persona } from '../model/persona.model';
 
 export class PersonaService {
   URL = 'http://localhost:8080/personas/';
-  
+  /*URL = 'https://backend-sosasilvia.onrender.com/personas/'*/
+
   constructor(private httpClient: HttpClient){}
 
   public lista(): Observable<persona[]>{
@@ -21,16 +22,16 @@ export class PersonaService {
     return this.httpClient.get<persona>(this.URL + `detail/${id}`);
   }
 
-  public save(Persona: persona): Observable<any>{
+  /*public save(Persona: persona): Observable<any>{
     return this.httpClient.post<any>(this.URL + 'create', Persona);
-  }
+  }*/
 
   public update(id: number, Persona: persona): Observable<any>{
     return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
   }
 
-  public delete(id: number): Observable<any>{
+  /*public delete(id: number): Observable<any>{
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
-  }
+  }*/
 }
 

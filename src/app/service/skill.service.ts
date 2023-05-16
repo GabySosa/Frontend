@@ -9,7 +9,8 @@ import { Skill } from '../model/skill';
 })
 export class SkillService {
   URL = 'http://localhost:8080/skill/';
-  
+    /*URL = 'https://backend-sosasilvia.onrender.com/skill/'*/
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Skill[]>{
